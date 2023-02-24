@@ -134,6 +134,10 @@ span {
 .header__contakt-link {
   color: var(--sacondary-color-color);
 }
+.header__contakt-link:hover,
+.header__contakt-link:focus {
+color: var(--accent-color);
+}
 
 .icon-envelope,
 .icon-smartphone {
@@ -354,14 +358,15 @@ span {
   align-items: center;
   width: 170px;
   height: 92px;
-  border: 1px solid #afb1b8;
+  border: 1px solid ;
   border-radius: 4px;
-  /* fill: currentColor; */
+  color: var(--background-icon);
 }
 
 .clients__logo-link:hover,
 .clients__logo-link:focus {
   color: var(--accent-color);
+  
 }
 .clients-icon {
   fill: currentColor;
