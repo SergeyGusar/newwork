@@ -8,6 +8,7 @@
   --cont-footer: rgba(255, 255, 255, 0.6);
   --portfolio-btn: #f5f4fa;
   --body-background: #f5f5f5;
+  --background-icon: #afb1b8;
 }
 
 h1,
@@ -296,7 +297,34 @@ span {
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.03em;
-  padding-top: 10px;
+  margin-top: 10px;
+}
+
+.team__social-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+  margin-top: 16px;
+}
+.team__social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: var(--background-icon);
+}
+
+
+.team__social-link:hover,
+.team__social-link:focus {
+  color: var(--accent-color);
+  color: var(--text-color);
+}
+.team__social-icon {
+  fill: currentColor;
 }
 
 /* Постійні клієнти */
@@ -379,7 +407,11 @@ span {
   color: var(--cont-footer);
 }
 
+
+
 /* Portfolio */
+
+
 .project {
   padding-top: 94px;
   padding-bottom: 94px;
