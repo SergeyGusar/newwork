@@ -320,8 +320,8 @@ span {
 
 .team__social-link:hover,
 .team__social-link:focus {
-  color: var(--accent-color);
   color: var(--text-color);
+  background-color: var(--accent-color)
 }
 .team__social-icon {
   fill: currentColor;
