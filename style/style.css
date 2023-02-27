@@ -9,6 +9,7 @@
   --portfolio-btn: #f5f4fa;
   --body-background: #f5f5f5;
   --background-icon: #afb1b8;
+  --background-footer-icon:rgba(255, 255, 255, 0.1);
 }
 
 h1,
@@ -136,7 +137,7 @@ span {
 }
 .header__contakt-link:hover,
 .header__contakt-link:focus {
-color: var(--accent-color);
+  color: var(--accent-color);
 }
 
 .icon-envelope,
@@ -321,11 +322,10 @@ color: var(--accent-color);
   color: var(--background-icon);
 }
 
-
 .team__social-link:hover,
 .team__social-link:focus {
   color: var(--text-color);
-  background-color: var(--accent-color)
+  background-color: var(--accent-color);
 }
 .team__social-icon {
   fill: currentColor;
@@ -358,7 +358,7 @@ color: var(--accent-color);
   align-items: center;
   width: 170px;
   height: 92px;
-  border: 1px solid ;
+  border: 1px solid;
   border-radius: 4px;
   color: var(--background-icon);
 }
@@ -366,7 +366,6 @@ color: var(--accent-color);
 .clients__logo-link:hover,
 .clients__logo-link:focus {
   color: var(--accent-color);
-  
 }
 .clients-icon {
   fill: currentColor;
@@ -381,6 +380,7 @@ color: var(--accent-color);
 }
 .footer__container {
   width: 1200px;
+  display: flex;
 }
 
 .footer__logo {
@@ -412,11 +412,53 @@ color: var(--accent-color);
   color: var(--cont-footer);
 }
 
+.footer__join {
+  margin-left: 70px;
+}
 
+.footer__join-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--text-color);
+}
 
-/* Portfolio */
+.join-icon-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
 
+.join-icon-item {
+  display: flex;
+  align-items: baseline;
+}
 
+.join-icon-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--background-footer-icon);
+  color: var(--text-color);
+}
+.join-icon-link:hover,
+.join-icon-link:focus {
+background-color: var(--accent-color);
+color: var();
+}
+
+.join-icon {
+  fill: currentColor;
+}
+
+/* Portfolio */ 
 .project {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -447,6 +489,7 @@ color: var(--accent-color);
 }
 .portfolio__project-list {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 30px;
 }
@@ -469,7 +512,7 @@ color: var(--accent-color);
   line-height: 2;
 
   letter-spacing: 0.06em;
-  
+
   color: var(--first-color);
 }
 .portfolio__project-work {
@@ -478,6 +521,6 @@ color: var(--accent-color);
   line-height: 1.9;
 
   letter-spacing: 0.03em;
- 
+
   color: var(--sacondary-color-color);
 }
