@@ -394,6 +394,9 @@ span {
   margin-bottom: 20px;
 }
 
+.footer__address:hover {
+color: var(--accent-color);
+}
 .footer__item-address {
   margin-bottom: 12px;
 }
@@ -404,13 +407,14 @@ span {
 .footer__item-mail {
   margin-bottom: 12px;
 }
-.footer__mail {
+.footer__mail, .footer__tel {
   color: var(--cont-footer);
+}
+.footer__mail:hover,
+ .footer__tel:hover {
+  color: var(--accent-color);
 }
 
-.footer__tel {
-  color: var(--cont-footer);
-}
 
 .footer__join {
   margin-left: 70px;
@@ -495,15 +499,14 @@ color: var();
 }
 
 .poftfolio__project-item:hover {
-  border: 1px solid #eeeeee;
+ 
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-.poftfolio__project-item {
-  flex-basis: calc ((100% - 30 * 2) / 3);
-}
+
 
 .portfolio__text {
+  border: 1px solid #eeeeee;
   padding: 20px 24px;
 }
 .potfolio__project-title {
@@ -519,8 +522,8 @@ color: var();
   font-weight: 400;
   font-size: 16px;
   line-height: 1.9;
-
   letter-spacing: 0.03em;
 
+  margin-top: 4px;
   color: var(--sacondary-color-color);
 }
