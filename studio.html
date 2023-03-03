@@ -24,7 +24,7 @@
         <a class="header__logo" href=""><span>Web</span>Studio</a>
         <ul class="header__nav-list">
           <li class="header__nav-item">
-            <a class="header__nav-link-current" href="./index.html">Студия</a>
+            <a class="header__nav-link-active current" href="./index.html">Студия</a>
           </li>
           <li class="header__nav-item">
             <a class="header__nav-link" href="./portfolio.html">Портфолио</a>
@@ -58,7 +58,7 @@
     <section class="hero">
       <div class="hero__container container">
         <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
-      <button class="hero__btn" type="button">Замовити послугу</button>
+      <button class="hero__btn" type="button" data-modal-open>Замовити послугу</button>
       </div>
     </section>
     <!-- Переваги -->
@@ -433,5 +433,19 @@
       </div>
      </div>
     </section>
+    <!-- Модальное окно -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="close-button" type="button" data-modal-close>
+          <svg class="icon-close" width="18" height="18">
+            <use href="../studio.img/sprite.svg#icon-close">
+
+            </use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <!-- Скрипт -->
+    <script src="./js/modal.js"></script>
   </body>
 </html>
