@@ -94,13 +94,15 @@ span {
 
 .header__nav-link-current,
 .header__nav-link {
-  /* margin-right: 50px; */
-
   font-weight: 500;
   font-size: 14px;
   line-height: 1.4;
   letter-spacing: 0.02em;
   color: var(--accent-color);
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header__nav-link {
@@ -134,6 +136,10 @@ span {
 
 .header__contakt-link {
   color: var(--sacondary-color-color);
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header__contakt-link:hover,
 .header__contakt-link:focus {
@@ -340,6 +346,10 @@ span {
   height: 44px;
   border-radius: 50%;
   color: var(--background-icon);
+
+  transition-property: var(--background-icon) ;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team__social-link:hover,
@@ -381,6 +391,10 @@ span {
   border: 1px solid;
   border-radius: 4px;
   color: var(--background-icon);
+
+  transition-property: color ;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients__logo-link:hover,
@@ -414,6 +428,11 @@ span {
   margin-bottom: 20px;
 }
 
+.footer__address, .footer__mail, .footer__tel {
+  transition-property: color ;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 .footer__address:hover {
 color: var(--accent-color);
 }
@@ -471,6 +490,10 @@ color: var(--accent-color);
   border-radius: 50%;
   background-color: var(--background-footer-icon);
   color: var(--text-color);
+
+  transition-property: var(--background-footer-icon);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .join-icon-link:hover,
 .join-icon-link:focus {
