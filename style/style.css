@@ -11,6 +11,7 @@
   --background-icon: #afb1b8;
   --background-footer-icon: rgba(255, 255, 255, 0.1);
   --bacground-overlay: rgba(33, 150, 243, 0.9);
+  --bacground-we-do__work: rgba(47, 48, 58, 0.8);
 }
 
 h1,
@@ -297,7 +298,29 @@ border-radius: 2px;
   text-align: center;
   letter-spacing: 0.03em;
 }
+.we-do__work {
+  position: relative;
+}
+.we-do__text {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 224px;
+  bottom: 0;
+  right: 0;
+  width: 370px;
+  height: 70px;
+  background-color: rgba(47, 48, 58, 0.8);
+  font-weight: 700;
+font-size: 14px;
+line-height: 1.4;
+text-align: center;
+letter-spacing: 0.03em;
+text-transform: uppercase;
 
+color: var(--text-color);
+}
 /* Team */
 .team {
   background-color: var(--portfolio-btn);
