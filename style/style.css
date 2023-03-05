@@ -802,3 +802,59 @@ color: var(--first-color);
 .modal .icon-close:focus {
   fill: var(--accent-color);
 }
+.form-element {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  cursor: pointer;
+
+}
+.form-element label {
+  padding-top: 10px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16px;
+  letter-spacing: 0.01em;
+  color: var(--first-color);
+}
+
+.accept label {
+  display: contents;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71px;
+  letter-spacing: 0.03em;
+  color: var(--primary-color);
+}
+.input-wrap {
+  position: relative;
+  padding-top: 4px;
+}
+.form-element svg {
+  position: absolute;
+  top: 28px;
+  left: 12px;
+  transform: translateY(-50%);
+}
+.form-element input {
+  width: 100%;
+  height: 40px;
+  padding-left: 42px;
+  margin-top: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+border-radius: 4px;
+outline: none;
+transition-property: border, fill, svg;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-element input:focus {
+  border: 1px solid var(--accent-color);
+}
+.form-element input:focus + svg {
+  fill: var(--accent-color);
+}
+
+.icon-modal {
+ 
+}
