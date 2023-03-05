@@ -119,12 +119,11 @@ span {
   position: absolute;
 
   width: 49px;
-height: 4px;
-top: 76px;
-
+  height: 4px;
+  top: 76px;
 
   background: var(--accent-color);
-border-radius: 2px;
+  border-radius: 2px;
 }
 
 .header__nav-link {
@@ -313,13 +312,13 @@ border-radius: 2px;
   height: 70px;
   background-color: rgba(47, 48, 58, 0.8);
   font-weight: 700;
-font-size: 14px;
-line-height: 1.4;
-text-align: center;
-letter-spacing: 0.03em;
-text-transform: uppercase;
+  font-size: 14px;
+  line-height: 1.4;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 
-color: var(--text-color);
+  color: var(--text-color);
 }
 /* Team */
 .team {
@@ -456,8 +455,9 @@ color: var(--text-color);
   background-color: var(--footer-color);
 }
 .footer__container {
-  width: 1200px;
+  /* width: 1200px; */
   display: flex;
+  align-items: baseline;
 }
 
 .footer__logo {
@@ -543,11 +543,84 @@ color: var(--text-color);
 .join-icon-link:hover,
 .join-icon-link:focus {
   background-color: var(--accent-color);
-  color: var();
 }
 
 .join-icon {
   fill: currentColor;
+}
+
+.mailing-list {
+  padding-left: 93px;
+}
+
+.mailing-list input::placeholder {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.mailing-text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--text-color);
+}
+
+.mailing-wrap {
+  display: flex;
+  align-items: baseline;
+}
+.mailing-wrap input {
+  cursor: pointer;
+  outline: none;
+  width: 358px;
+  height: 50px;
+  margin-top: 20px;
+  padding-left: 16px;
+  color: var(--text-color);
+  background: var(--footer-color);
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  transition-property: drop-shadow, border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mailing-wrap input:focus {
+  border: 1px solid var(--accent-color);
+}
+
+.mailing-btn {
+  width: 200px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  margin-left: 12px;
+  color: var(--text-color);
+  background: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.mailing-btn-text {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  margin-left: 28px;
+}
+
+.icon-send {
+  fill:currentColor;
+  margin-left: 10px;
 }
 
 /* Portfolio */
@@ -559,13 +632,13 @@ color: var(--text-color);
 .current-active::after {
   display: block;
   position: absolute;
-  content: '';
+  content: "";
   width: 79px;
-height: 4px;
-top: 76px;
+  height: 4px;
+  top: 76px;
 
-background: var(--accent-color);
-border-radius: 2px;
+  background: var(--accent-color);
+  border-radius: 2px;
 }
 
 .portfolio__btn-list {
@@ -621,14 +694,11 @@ border-radius: 2px;
 }
 .overlay-text {
   font-weight: 400;
-font-size: 18px;
-line-height: 1.56;
-letter-spacing: 0.03em;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
 
-
-
-color: var(--text-color);
-
+  color: var(--text-color);
 }
 .poftfolio__project-item:hover .overlay {
   transform: translateY(0);
@@ -642,7 +712,7 @@ color: var(--text-color);
   padding: 20px 24px;
 }
 .potfolio__project-title {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -652,7 +722,7 @@ color: var(--text-color);
   color: var(--first-color);
 }
 .portfolio__project-work {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-weight: 400;
   font-size: 16px;
   line-height: 1.9;
@@ -676,7 +746,6 @@ color: var(--text-color);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms;
 }
 
-
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
@@ -696,7 +765,6 @@ color: var(--text-color);
   border-radius: 4px;
   background-color: var(--text-color);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 
 .backdrop.is-hidden .modal {
@@ -716,11 +784,9 @@ color: var(--text-color);
   background-color: var(--text-color);
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  
-
 }
 
 .modal .icon-close:hover,
-.modal .icon-close:focus{
+.modal .icon-close:focus {
   fill: var(--accent-color);
 }

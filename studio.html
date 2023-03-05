@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;1,200&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
     <link
@@ -440,6 +440,21 @@
           </li>
         </ul>
       </div>
+      <form class="mailing-list">
+        <p class="mailing-text">Підпишіться на розсилку</p>
+        <div class="mailing-wrap">
+          <label for="mailing">
+            <input type="mailing" name="mailing" id="mailing" placeholder="E-mail">
+          </label>
+        <button  class="mailing-btn" type="submit">
+          <p class="mailing-btn-text">Підписатися</p>
+          <svg class="icon-send" width="24" height="24">
+            <use href="../studio.img/sprite.svg#icon-send">
+            </use>
+          </svg>
+        </button>
+        </div>
+      </form>
      </div>
     </section>
     <!-- Модальное окно -->
@@ -448,7 +463,6 @@
         <button class="close-button" type="button" data-modal-close>
           <svg class="icon-close" width="18" height="18">
             <use href="../studio.img/sprite.svg#icon-close">
-
             </use>
           </svg>
         </button>
