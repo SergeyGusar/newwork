@@ -45,8 +45,9 @@ a {
 }
 
 body {
-  background-color: var(--text-color);
   font-family: "Roboto" sans-serif;
+  background-color: var(--text-color);
+  
 }
 .container {
   width: 1200px;
@@ -666,8 +667,7 @@ span {
 }
 .portfolio__project-list {
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+   flex-wrap: wrap;
   gap: 30px;
 }
 
