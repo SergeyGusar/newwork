@@ -497,13 +497,20 @@
           </div>
           <div class="form-element">
             <label for="coment">Коментар</label>
-            <textarea name="coment" id="coment" cols="30" rows="10"></textarea>
+            <textarea name="coment" id="coment" cols="30" rows="10" placeholder="Введіть текст"></textarea>
           </div>
-          <div class="">
-            <input type="checkbox" name="" id="" >
+          <div class="accept">
+            <label for="accept">
+              <input type="checkbox" name="accept" id="accept" >
+              <div class="checkbox-btn">
+                <svg width="16" height="15">
+                  <use href="../studio.img/sprite.svg#icon-Vector"></use>
+                </svg>
+              </div>
             <p class="agree-text">Погоджуюся з розсилкою та приймаю <span><a class="agree-link" href=""> Умови договору</a></span></p>
+            </label>
           </div>
-          <button class="agree-btn" type="button">Відправити</button>
+          <button class="modal-submit submit-text" type="submit">Відправити</button>
         </form>
       </div>
     </div>
