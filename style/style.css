@@ -913,9 +913,7 @@ body {
   border: 0.2px solid var(--accent-color);
 }
 
-.svg-vector {
-  fill:var(--text-color)
-}
+
 .agree-text {
   display: flex;
   align-items: center;
