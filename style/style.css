@@ -43,11 +43,20 @@ a {
   text-decoration: none;
   color: inherit;
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
 
 body {
   font-family: "Roboto" sans-serif;
   background-color: var(--text-color);
-  
 }
 .container {
   width: 1200px;
@@ -620,7 +629,7 @@ body {
 }
 
 .icon-send {
-  fill:currentColor;
+  fill: currentColor;
   margin-left: 10px;
 }
 
@@ -667,7 +676,7 @@ body {
 }
 .portfolio__project-list {
   display: flex;
-   flex-wrap: wrap;
+  flex-wrap: wrap;
   gap: 30px;
 }
 
@@ -757,7 +766,7 @@ body {
   top: 50%;
   left: 50%;
   padding: 40px 39px 40px 41px;
-  transform: translateX(-50%) translateY(-66%);
+  transform: translateX(-50%) translateY(-60%);
   min-width: 528px;
   min-height: 581px;
 
@@ -791,11 +800,11 @@ body {
   justify-content: center;
   align-items: center;
   font-weight: 700;
-font-size: 20px;
-line-height: 1.15;
-text-align: center;
-letter-spacing: 0.03em;
-color: var(--first-color);
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--first-color);
 }
 
 .modal .icon-close:hover,
@@ -807,7 +816,6 @@ color: var(--first-color);
   flex-direction: column;
   margin-top: 10px;
   cursor: pointer;
-
 }
 .form-element label {
   padding-top: 10px;
@@ -842,11 +850,11 @@ color: var(--first-color);
   padding-left: 42px;
   margin-top: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
-border-radius: 4px;
-outline: none;
-transition-property: border, fill, svg;
-transition-duration: 250ms;
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 4px;
+  outline: none;
+  transition-property: border, fill, svg;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-element input:focus {
   border: 1px solid var(--accent-color);
@@ -858,9 +866,23 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 .form-element textarea {
   outline: none;
   resize: none;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-border-radius: 4px;
+  font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 0.01em;
+    padding: 12px 16px;
+    height: 138px;
+    margin-top: 10px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 
+.form-element textarea:focus {
+  outline: none;
+  border: 1px solid var(--accent-color);
 }
 
 .accept {
@@ -870,14 +892,40 @@ border-radius: 4px;
   margin-top: 20px;
   padding: 0 11px;
 }
-.agree-text {
-  font-weight: 400;
-font-size: 14px;
-line-height: 1.71;
 
-letter-spacing: 0.03em;
-padding-left: 9px;
-color: var(--sacondary-color-color);
+.checkbox-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 15px;
+  margin-right: 7px;
+  cursor: pointer;
+  border: 2px solid var(--first-color);
+  border-radius: 2px;
+  transition-property: background, border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.accept input:checked + .checkbox-btn {
+  background: var(--accent-color);
+  border: 0.2px solid var(--accent-color);
+}
+
+.svg-vector {
+  fill:var(--text-color)
+}
+.agree-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71px;
+  letter-spacing: 0.03em;
+  color: var(--sacondary-color-color);
 }
 .agree-link {
   margin-left: 5px;
@@ -891,21 +939,20 @@ color: var(--sacondary-color-color);
   align-items: center;
   width: 200px;
   height: 50px;
-margin: 30px auto 40px;
-color: var(--text-color);
-background-color: var(--accent-color);
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-border-radius: 4px;
-transition-property: background-color, box-shadow;
-transition-duration: 250ms;
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  margin: 30px auto 0;
+  color: var(--text-color);
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  transition-property: background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .summit-text {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.06em;
-  
 }
 .submit-modal:hover {
   background: var(--accent-color);
