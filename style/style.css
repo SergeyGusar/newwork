@@ -5,6 +5,7 @@
   --accent-color: #2196f3;
   --footer-color: #2f303a;
   --header-logo: #000000;
+  --hedar-border: #ececec;
   --cont-footer: rgba(255, 255, 255, 0.6);
   --portfolio-btn: #f5f4fa;
   --body-background: #f5f5f5;
@@ -12,6 +13,12 @@
   --background-footer-icon: rgba(255, 255, 255, 0.1);
   --bacground-overlay: rgba(33, 150, 243, 0.9);
   --bacground-we-do__work: rgba(47, 48, 58, 0.8);
+  --color-input-border: rgba(33, 33, 33, 0.2);
+  --color-border-modal-clos-btn: rgba(0, 0, 0, 0.1);
+  --bacground-bacdrop: rgba(0, 0, 0, 0.2);
+  --border-portfolio-text: #eeeeee;
+  --border-mailing-imput: rgba(255, 255, 255, 0.3);
+  --bacgruond-color-we-do-text: rgba(47, 48, 58, 0.8);
 }
 
 h1,
@@ -69,7 +76,7 @@ body {
 /* Header */
 .header {
   background-color: var(--text-color);
-  border-bottom: 1px solid #ececec;
+  border-bottom: 1px solid var(--hedar-border);
 }
 .header__container {
   display: flex;
@@ -320,7 +327,7 @@ body {
   right: 0;
   width: 370px;
   height: 70px;
-  background-color: rgba(47, 48, 58, 0.8);
+  background-color: var(--bacgruond-color-we-do-text);
   font-weight: 700;
   font-size: 14px;
   line-height: 1.4;
@@ -570,7 +577,7 @@ body {
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--cont-footer);
 }
 
 .mailing-text {
@@ -596,7 +603,7 @@ body {
   color: var(--text-color);
   background: var(--footer-color);
   border-radius: 4px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid var(--border-mailing-imput);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   transition-property: drop-shadow, border;
   transition-duration: 250ms;
@@ -717,7 +724,7 @@ body {
 }
 
 .portfolio__text {
-  border: 1px solid #eeeeee;
+  border: 1px solid var(--border-portfolio-text);
   padding: 20px 24px;
 }
 .potfolio__project-title {
@@ -751,7 +758,7 @@ body {
   width: 100%;
   height: 100%;
 
-  background: rgba(0, 0, 0, 0.2);
+  background: var(--bacground-bacdrop);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms;
 }
 
@@ -793,7 +800,7 @@ body {
   right: 8px;
   background-color: var(--text-color);
   border-radius: 50%;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--color-border-modal-clos-btn);
 }
 .modal-text {
   display: flex;
@@ -849,7 +856,7 @@ body {
   height: 40px;
   padding-left: 42px;
   margin-top: 4px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
+  border: 1px solid var(--color-input-border);
   border-radius: 4px;
   outline: none;
   transition-property: border, fill, svg;
@@ -872,7 +879,7 @@ body {
     padding: 12px 16px;
     height: 138px;
     margin-top: 10px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
+    border: 1px solid var(--color-input-border);
   border-radius: 4px;
   transition-property: border;
   transition-duration: 250ms;
