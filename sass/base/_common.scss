@@ -1,11 +1,26 @@
+// BREACTPOINTS
+$mobile: 480px;
+$tablet: 768px;
+$desktop: 1200px;
 body {
     font-family: "Roboto" sans-serif;
     background-color: var(--text-color);
   }
   .container {
-    width: 1200px;
+   
     margin: 0 auto;
     padding: 0 15px;
   
+    @media screen and (min-width:480px) {
+      width: 480;
+    }
+
+    @media screen and (min-width:768px) {
+      width: 768;
+    }
+
+    @media  screen and (min-width: 1200px) { 
+      width: 1200px;
+    }
     /* outline: solid red; */
   }

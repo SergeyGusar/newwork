@@ -312,10 +312,24 @@ body {
 }
 
 .container {
-  width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
   /* outline: solid red; */
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .header__logo {
