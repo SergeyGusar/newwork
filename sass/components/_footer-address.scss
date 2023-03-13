@@ -1,0 +1,28 @@
+.footer__address,
+.footer__mail,
+.footer__tel {
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer__address:hover {
+  color: var(--accent-color);
+}
+.footer__item-address {
+  margin-bottom: 12px;
+}
+.footer__address {
+  color: var(--text-color);
+}
+
+.footer__item-mail {
+  margin-bottom: 12px;
+}
+.footer__mail,
+.footer__tel {
+  color: var(--cont-footer);
+}
+.footer__mail:hover,
+.footer__tel:hover {
+  color: var(--accent-color);
+}

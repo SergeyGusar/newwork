@@ -1,0 +1,10 @@
+/* Header */
+.header {
+    background-color: var(--text-color);
+    border-bottom: 1px solid var(--hedar-border);
+  }
+  .header__container {
+    display: flex;
+    align-items: center;
+    height: 80px;
+  }

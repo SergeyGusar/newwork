@@ -1,0 +1,74 @@
+.mailing-list {
+    padding-left: 93px;
+  }
+  
+  .mailing-list input::placeholder {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: var(--cont-footer);
+  }
+  
+  .mailing-text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--text-color);
+  }
+  
+  .mailing-wrap {
+    display: flex;
+    align-items: baseline;
+  }
+  .mailing-wrap input {
+    cursor: pointer;
+    outline: none;
+    width: 358px;
+    height: 50px;
+    margin-top: 20px;
+    padding-left: 16px;
+    color: var(--text-color);
+    background: var(--footer-color);
+    border-radius: 4px;
+    border: 1px solid var(--border-mailing-imput);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    transition-property: drop-shadow, border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .mailing-wrap input:focus {
+    border: 1px solid var(--accent-color);
+  }
+  
+  .mailing-btn {
+    width: 200px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin-left: 12px;
+    color: var(--text-color);
+    background: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .mailing-btn-text {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    margin-left: 28px;
+  }
+  
+  .icon-send {
+    fill: currentColor;
+    margin-left: 10px;
+  }
+  

@@ -1,0 +1,30 @@
+.header__contakt {
+    margin-left: auto;
+  }
+  .header__contakt-list {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+    flex-direction: row;
+  }
+  .header__contakt-item {
+    margin-right: 40px;
+  }
+  
+  .header__contakt-link {
+    color: var(--sacondary-color-color);
+  
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .header__contakt-link:hover,
+  .header__contakt-link:focus {
+    color: var(--accent-color);
+  }
+  
+  .icon-envelope,
+  .icon-smartphone {
+    fill: currentColor;
+    margin-right: 10px;
+  }

@@ -210,17 +210,6 @@ body {
   background-size: cover;
   background-color: var(--footer-color);
 }
-/* .hero__container {
-  max-width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 200px;
-  padding-bottom: 200px;
-  background-image: url(../studio.img/Hero.jpg);
-  background-repeat: no-repeat;
-} */
 
 .hero__title {
   font-weight: 900;

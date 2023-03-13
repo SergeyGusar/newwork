@@ -1,0 +1,17 @@
+.project {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  
+  .current-active::after {
+    display: block;
+    position: absolute;
+    content: "";
+    width: 79px;
+    height: 4px;
+    top: 76px;
+  
+    background: var(--accent-color);
+    border-radius: 2px;
+  }
+  
