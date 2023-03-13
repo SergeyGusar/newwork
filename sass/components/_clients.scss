@@ -32,12 +32,13 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
   
-  .clients__logo-link:hover,
-  .clients__logo-link:focus {
-    color: var(--accent-color);
-  }
+  
+     &:hover,
+     &:focus {
+     color: var(--accent-color);
+    }
+ }
   .clients-icon {
     fill: currentColor;
   }

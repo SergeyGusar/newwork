@@ -112,12 +112,13 @@
     transition-property: border, fill, svg;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .form-element input:focus {
+  
+    &:focus {
     border: 1px solid var(--accent-color);
-  }
-  .form-element input:focus + svg {
+   }
+    &:focus + svg {
     fill: var(--accent-color);
+   }
   }
   
   .form-element textarea {

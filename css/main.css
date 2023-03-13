@@ -394,16 +394,13 @@ span {
   color: var(--first-color);
 }
 
-.header__nav-link,
-.header__contakt-link {
+.header__nav-link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.4;
   letter-spacing: 0.02em;
 }
-
-.header__nav-link:hover,
-.header__nav-link:focus {
+.header__nav-link:hover, .header__nav-link:focus {
   color: var(--accent-color);
 }
 
@@ -423,14 +420,16 @@ span {
 }
 
 .header__contakt-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: 0.02em;
   color: var(--sacondary-color-color);
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.header__contakt-link:hover,
-.header__contakt-link:focus {
+.header__contakt-link:hover, .header__contakt-link:focus {
   color: var(--accent-color);
 }
 
@@ -646,9 +645,7 @@ span {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.team__social-link:hover,
-.team__social-link:focus {
+.team__social-link:hover, .team__social-link:focus {
   color: var(--text-color);
   background-color: var(--accent-color);
 }
@@ -692,9 +689,7 @@ span {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.clients__logo-link:hover,
-.clients__logo-link:focus {
+.clients__logo-link:hover, .clients__logo-link:focus {
   color: var(--accent-color);
 }
 
@@ -754,8 +749,8 @@ span {
 .footer__tel {
   color: var(--cont-footer);
 }
-
-.footer__mail:hover,
+.footer__mail:hover, .footer__mail:hover,
+.footer__tel:hover,
 .footer__tel:hover {
   color: var(--accent-color);
 }
@@ -799,9 +794,7 @@ span {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.join-icon-link:hover,
-.join-icon-link:focus {
+.join-icon-link:hover, .join-icon-link:focus {
   background-color: var(--accent-color);
 }
 
@@ -917,9 +910,7 @@ span {
   border-radius: 4px;
   padding: 6px 22px;
 }
-
-.portfolio__btn:hover,
-.portfolio__btn:focus {
+.portfolio__btn:hover, .portfolio__btn:focus {
   color: var(--portfolio-btn);
   background-color: var(--accent-color);
 }
@@ -1107,11 +1098,9 @@ span {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .form-element input:focus {
   border: 1px solid var(--accent-color);
 }
-
 .form-element input:focus + svg {
   fill: var(--accent-color);
 }

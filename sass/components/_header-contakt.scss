@@ -12,16 +12,21 @@
   }
   
   .header__contakt-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.4;
+    letter-spacing: 0.02em;
     color: var(--sacondary-color-color);
   
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .header__contakt-link:hover,
-  .header__contakt-link:focus {
+  
+    &:hover,
+    &:focus {
     color: var(--accent-color);
   }
+}
   
   .icon-envelope,
   .icon-smartphone {

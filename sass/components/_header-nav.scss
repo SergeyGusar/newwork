@@ -46,16 +46,16 @@
   .header__nav-link {
     color: var(--first-color);
   }
-  .header__nav-link,
-  .header__contakt-link {
+  .header__nav-link{
+  
     font-weight: 500;
     font-size: 14px;
     line-height: 1.4;
     letter-spacing: 0.02em;
-  }
   
-  .header__nav-link:hover,
-  .header__nav-link:focus {
+  
+   &:hover,
+   &:focus {
     color: var(--accent-color);
   }
-  
+}

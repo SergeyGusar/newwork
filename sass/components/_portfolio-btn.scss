@@ -14,10 +14,11 @@
     background-color: var(--portfolio-btn);
     border-radius: 4px;
     padding: 6px 22px;
-  }
   
-  .portfolio__btn:hover,
-  .portfolio__btn:focus {
+  
+   &:hover,
+   &:focus {
     color: var(--portfolio-btn);
     background-color: var(--accent-color);
   }
+ }

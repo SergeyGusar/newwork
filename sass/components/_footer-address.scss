@@ -21,8 +21,10 @@
 .footer__mail,
 .footer__tel {
   color: var(--cont-footer);
-}
-.footer__mail:hover,
-.footer__tel:hover {
-  color: var(--accent-color);
+
+
+   &:hover,
+   &:hover { color: var(--accent-color);
+  }
+  
 }
